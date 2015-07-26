@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_screen_bg">
+
+    <TextView
+
+        android:text="@string/welcome_msg"
+        android:textColor="@color/white"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        fontPath="fonts/Roboto-Thin.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/splash"
+        android:src="@drawable/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/continueButton"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="20dp"
+        fancy:defaultColor="@color/enter_button_bg"
+        fancy:focusColor="#FFFFFF"
+        fancy:iconPosition="left"
+        fancy:radius="10dp"
+        fancy:text="@string/splash_continue"
+        fancy:textColor="#FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_register">
+
+    <RelativeLayout
+        android:id="@+id/topWallAdd"
+        android:background="@color/blue_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/topWallCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            fontPath="fonts/RobotoCondensed-Light.ttf"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:text="@string/cancel"/>
+
+        <Button
+            android:id="@+id/addTextImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            fontPath="fonts/RobotoCondensed-Light.ttf"
+            android:text="@string/add_text"/>
+
+        <Button
+            android:id="@+id/sendPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            fontPath="fonts/RobotoCondensed-Light.ttf"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="@string/send"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/addImage"
+        android:layout_below="@+id/topWallAdd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/center_divider"/>
+
+    <TextView
+        android:id="@+id/center_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:text="|"
+        android:textColor="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/browseButton"
+        android:src="@drawable/ic_action_perm_media"
+        android:background="@color/bg_register"
+        android:layout_toLeftOf="@+id/center_divider"
+        android:layout_toStartOf="@+id/center_divider"
+        android:layout_below="@+id/addImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/picCamera"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/addImage"
+        android:layout_toRightOf="@+id/center_divider"
+        android:layout_toEndOf="@+id/center_divider"
+        android:src="@drawable/ic_image_photo_camera"
+        android:background="@color/bg_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

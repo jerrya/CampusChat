@@ -1,0 +1,103 @@
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoShadowHeight="4dp" >
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/slide_up_panel">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/blue_main"
+            android:id="@+id/top_panel">
+
+            <TextView
+                android:id="@+id/panelTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                fontPath="fonts/RobotoCondensed-Light.ttf"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="@string/add_post"/>
+
+            <Button
+                android:id="@+id/sendComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"
+                android:textColor="@color/white"
+                android:padding="0dp"
+                fontPath="fonts/RobotoCondensed-Light.ttf"
+                android:text="@string/send"/>
+
+            <Button
+                android:id="@+id/cancelPost"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textColor="@color/white"
+                fontPath="fonts/RobotoCondensed-Light.ttf"
+                android:text="@string/cancel"
+                android:padding="0dp"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_panel"
+            android:id="@+id/bottom_panel"
+            android:background="@color/list_view_bg">
+
+            <ListView
+                android:layout_above="@+id/enterComment"
+                android:id="@+id/list_panel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:choiceMode="singleChoice"
+                android:divider="@color/list_view_divider_bg"
+                android:dividerHeight="1dp"
+                android:listSelector="@android:color/black"
+                android:background="@color/list_view_bg"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:inputType="textCapSentences|textMultiLine"
+                android:id="@+id/enterComment"
+                android:hint="@string/on_mind"
+                android:textColor="@android:color/black"
+                android:ems="10" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

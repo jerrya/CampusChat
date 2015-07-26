@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item android:id="@+id/change_campus"
+        android:icon="@drawable/ic_action_action_account_balance"
+        android:title="Change Campus"
+        android:showAsAction="always"  />
+
+    <item android:id="@+id/change_name"
+        android:icon="@drawable/ic_content_create"
+        android:title="Change Name"
+        android:showAsAction="always"  />
+
+</menu>

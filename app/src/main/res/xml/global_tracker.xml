@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ga_trackingId">UA&#8211;1234567&#8211;1</string>
+
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+    <screenName name="app.campuschat.me.MainActivity">MainActivity</screenName>
+    <screenName name="app.campuschat.me.MainScreenFragment">MainScreenFragment</screenName>
+
+</resources>

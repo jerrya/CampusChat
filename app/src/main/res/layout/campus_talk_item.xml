@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/list_view_bg">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/image_view"/>
+
+    <TextView
+        android:id="@+id/wallItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/list_view_text"
+        android:layout_toRightOf="@+id/image_view"
+        android:layout_toEndOf="@+id/image_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/talkInfoDate"
+        android:layout_marginTop="20dp"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/list_view_text"
+        android:layout_below="@+id/wallItemText"
+        android:drawableRight="@drawable/ic_action_query_builder"
+        android:drawableEnd="@drawable/ic_action_query_builder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/talkCommentCountView"
+        android:visibility="gone"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_communication_chat2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/wallItemText"/>
+
+    <TextView
+        android:id="@+id/talkCommentCount"
+        android:layout_marginTop="20dp"
+        android:textSize="12sp"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/list_view_text"
+        android:layout_below="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

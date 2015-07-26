@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50" >
+
+        <TextView
+            android:id="@+id/talkInfoMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#f9fbfc"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:background="@color/list_view_bg">
+
+        <TextView
+            android:id="@+id/talkCommentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:background="@color/blue_main"
+            android:text="@string/comments"
+            fontPath="fonts/RobotoCondensed-Light.ttf"
+            android:textSize="15sp"
+            android:textColor="@color/white"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/talkCommentTitle"
+            android:id="@android:id/list"
+            android:divider="@color/list_view_divider_bg"
+            android:layout_gravity="bottom"
+            android:dividerHeight="1dp"
+            android:background="@color/list_view_bg"
+            android:layout_above="@+id/talkCommentMessage"/>
+
+        <EditText
+            android:id="@+id/talkCommentMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:inputType="textCapSentences"
+            android:layout_toLeftOf="@+id/talkInfoCommentSubmit"
+            android:layout_toStartOf="@+id/talkInfoCommentSubmit"/>
+
+        <Button
+            android:id="@+id/talkInfoCommentSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:textSize="15sp"
+            android:textColor="@color/list_view_text"
+            android:background="@android:color/transparent"
+            android:layout_below="@android:id/list"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

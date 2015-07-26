@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_view_bg">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/talk_info_image_view"/>
+
+    <TextView
+        android:id="@+id/talk_info_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toRightOf="@+id/talk_info_image_view"
+        android:layout_toEndOf="@+id/talk_info_image_view"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:textColor="@color/list_view_text"/>
+
+</RelativeLayout>
